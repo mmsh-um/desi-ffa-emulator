@@ -1,0 +1,215 @@
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/LRG_EZmock_forFAemu_m1.dat'
+namout_part 'out/ll0.02/EZ_forFAemu_m1_N_LRG_truent_part_llen0.02.dat'
+namout_halo 'out/ll0.02/EZ_forFAemu_m1_N_LRG_truent_halos_llen0.02.dat'
+npart        5196911
+linklen       0.02d0
+ncut         1
+tartype0     1     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       N    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/forFAemu_data.dat'
+namout_part 'out/data/forFAemu_data_N_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/data/forFAemu_data_N_QSO_truent_halo_llen0.02.dat'
+npart 22446386
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       N    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_QSO_EZmock_forFAemu_m1.dat'
+namout_part 'out/prepped/prepped_EZ_forFAemu_m1_N_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/data/prepped_EZ_forFAemu_m1_N_QSO_truent_halo_llen0.02.dat'
+npart 2535187
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       N    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/forFAemu_data.dat'
+namout_part 'out/data3/forFAemu_data_N_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/data3/forFAemu_data_N_QSO_truent_halo_llen0.02.dat'
+npart 22446386
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       N    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_QSO_EZmock_forFAemu_m1.dat'
+namout_part 'out/prepped/prepped_EZ_forFAemu_m1_B_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/prepped/prepped_EZ_forFAemu_m1_B_QSO_truent_halo_llen0.02.dat'
+npart 2535187
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/forFAemu_data.dat'
+namout_part 'out/TrainedEmulator_Data/forFAemu_data_B_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/TrainedEmulator_Data/forFAemu_data_B_QSO_truent_halo_llen0.02.dat'
+npart 22446386
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_QSO_EZmock_forFAemu_m1.dat'
+namout_part 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_S_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_S_QSO_truent_halo_llen0.02.dat'
+npart 2535187
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       S    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/forFAemu_m0_rad0.045.dat'
+namout_part 'out/TrainedEmulator_Mock0/forFAemu_mock0_B_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/TrainedEmulator_Mock0/forFAemu_mock0_B_QSO_truent_halo_llen0.02.dat'
+npart 31828028
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_QSO_EZmock_forFAemu_m1.dat'
+namout_part 'out/EZOutputs_TrainedOnMock0/prepped_EZ_forFAemu_m1_B_QSO_truent_part_llen0.02.dat'
+namout_halo 'out/EZOutputs_TrainedOnMock0/prepped_EZ_forFAemu_m1_B_QSO_truent_halo_llen0.02.dat'
+npart 2535187
+linklen       0.02d0
+ncut         1
+tartype0       4     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_ELG_EZmock_forFAemu_m1.dat'
+namout_part 'out/EZOutputs_TrainedOnMock0/prepped_EZ_forFAemu_m1_B_ELG_truent_part_llen0.02.dat'
+namout_halo 'out/EZOutputs_TrainedOnMock0/prepped_EZ_forFAemu_m1_B_ELG_truent_halo_llen0.02.dat'
+npart 19743386
+linklen       0.02d0
+ncut         1
+tartype0       34     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_LRG_EZmock_forFAemu_m1.dat'
+namout_part 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_B_LRG_truent_part_llen0.02.dat'
+namout_halo 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_B_LRG_truent_halo_llen0.02.dat'
+npart 4818724
+linklen       0.02d0
+ncut         1
+tartype0       1     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/prepped_ELG_EZmock_forFAemu_m1.dat'
+namout_part 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_B_ELG_truent_part_llen0.02.dat'
+namout_halo 'out/EZOutputs_TrainedOnData/prepped_EZ_forFAemu_m1_B_ELG_truent_halo_llen0.02.dat'
+npart 19743386
+linklen       0.02d0
+ncut         1
+tartype0       34     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/ELG_Abacus2mock_forFAemu_m0.dat'
+namout_part 'out/Abacus2Outputs_TrainedOnData/prepped_Ab2_forFAemu_m0_B_ELG_truent_part_llen0.02.dat'
+namout_halo 'out/Abacus2Outputs_TrainedOnData/prepped_Ab2_forFAemu_m0_B_ELG_truent_halo_llen0.02.dat'
+npart 13165434
+linklen       0.02d0
+ncut         1
+tartype0       34     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/ELG_Abacus2mock_forFAemu_m24.dat'
+namout_part 'out/Abacus2Outputs_TrainedOnData/mocks_new/Ab2_forFAemu_m24_B_ELG_truent_part_llen0.02.dat'
+namout_halo 'out/Abacus2Outputs_TrainedOnData/mocks_new/Ab2_forFAemu_m24_B_ELG_truent_halo_llen0.02.dat'
+npart 13124662
+linklen       0.02d0
+ncut         1
+tartype0       34     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/forFAemu_data_BGS.dat'
+namout_part 'out/TrainedEmulator_Data/forFAemu_data_B_BGS_truent_part_llen0.02.dat'
+namout_halo 'out/TrainedEmulator_Data/forFAemu_data_B_BGS_truent_halo_llen0.02.dat'
+npart 7031420
+linklen       0.02d0
+ncut         1
+tartype0     60     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO  60 ~~> BGS
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+
+
+
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/BGS_Abacus2mock_forFAemu_m0.dat'
+namout_part 'out/Abacus2Outputs_TrainedOnData/BGS_Cutsky/Ab2_forFAemu_m0_B_BGS_truent_part_llen0.02_v0.1.dat'
+namout_halo 'out/Abacus2Outputs_TrainedOnData/BGS_Cutsky/Ab2_forFAemu_m0_B_BGS_truent_halo_llen0.02_v0.1.dat'
+npart 6870195
+linklen       0.02d0
+ncut         1
+tartype0       60     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO   60 ~~> BGS
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F

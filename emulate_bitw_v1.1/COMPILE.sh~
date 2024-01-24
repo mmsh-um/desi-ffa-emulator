@@ -1,0 +1,20 @@
+#!/bin/bash
+
+### settings
+rootDIR=/Users/davide/qua/emulate_bitw/4NERSC/emulate_bitw_v1.0
+#inFILE=/emulate_bitw.f90
+#xFILE=/emulate_bitw
+#inFILE=/emulate_bitw_lightcone.f90
+#xFILE=/emulate_bitw_lightcone
+inFILE=/emulate_bitw_lightcone_ntile.f90
+xFILE=/emulate_bitw_lightcone_ntile
+echo "rootDIR = $rootDIR"
+echo "inFILE  = $inFILE"
+echo "xFILE   = $xFILE"
+
+### compile
+#ifort $rootDIR$inFILE -o $rootDIR$xFILE -mcmodel medium -shared-intel
+#gfortran $rootDIR$inFILE -o $rootDIR$xFILE -ffree-line-length-none -mcmodel=medium
+gfortran $rootDIR$inFILE -o $rootDIR$xFILE -ffree-line-length-none
+#gfortran -fopenmp $rootDIR$inFILE -o $rootDIR$xFILE -ffree-line-length-none
+#gfortran -fopenmp $rootDIR$inFILE -o $rootDIR$xFILE -ffree-line-length-none -mcmodel=medium

@@ -1,0 +1,11 @@
+namin '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/in/ELG_EZmock_forFAemu_m1000.dat'
+namout_part '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/out/EZmock/EZmock_forFAemu_m1000_B_ELG_truent_part_llen0.02.dat'
+namout_halo '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/out/EZmock/EZmock_forFAemu_m1000_B_ELG_truent_halo_llen0.02.dat'
+npart 11744505
+linklen       0.02d0
+ncut         1
+tartype0       34     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO 60 ~~> BGS
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+fof_dir '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/'

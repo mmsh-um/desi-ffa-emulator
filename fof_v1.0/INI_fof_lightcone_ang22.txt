@@ -1,0 +1,11 @@
+namin 'aa'
+namout_part 'bb'
+namout_halo '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/out/ab_secondgen_cosmosim/ab_secondgen_cosmosim_forFAemu_m2_B_BGS_truent_halo_llen0.02.dat'
+npart 7110098
+linklen       0.02d0
+ncut         1
+tartype0       60     !> 34 ~~> ELG;   1 ~~> LRG;   4 ~~> QSO 60 ~~> BGS
+galcap       B    !> 'N' ~~> North;   'S' ~~> South;   'B' (or anything else) ~~> Both
+nsplit       1
+just_cfc_lg  F
+fof_dir '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0/'
