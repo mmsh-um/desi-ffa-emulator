@@ -1,11 +1,9 @@
-!> last modified 12-01-2024
-
 subroutine adjust_qref(qref,cnt,beta0,beta1,write_adj_lg,emudir)
   
   implicit none
 
-  include 'PRM_selprop_bins.f90'
   include 'PRM_string_attributes.f90'
+  include 'PRM_selprop_bins.f90'
 
   real(8), dimension(nbins_cfc,nbins_tnt) :: qref
   integer(4), dimension(nbins_cfc,nbins_tnt) :: cnt
@@ -15,7 +13,7 @@ subroutine adjust_qref(qref,cnt,beta0,beta1,write_adj_lg,emudir)
   integer(4) :: i,j,k
   real(8) :: norm,cfc_b,tnt_b,f,qadj
   real(8), dimension(nbins_cfc,nbins_tnt) :: dq
-  
+ 
   qref=beta0*qref
   do j=1,nbins_cfc
      cfc_b=j-1
