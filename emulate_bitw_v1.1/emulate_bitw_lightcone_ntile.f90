@@ -213,7 +213,7 @@ program emulate_bitw
            write(*,*)'done'
            if (adj_qref_lg) then
               write(*,*)'adjusting qref (individual cfc) ...'
-              call adjust_qref(qref_cfc,cnt_cfc,beta0,beta1,.true.,trim(emu_dir))
+              call adjust_qref(qref_cfc,cnt_cfc,beta0,beta1,.true.,emu_dir)
               write(*,*)'done'
            endif
            write(*,*)'emulating bitwise weights (individual cfc) ...'
