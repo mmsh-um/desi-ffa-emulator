@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### settings
-rootDIR=/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/fof_v1.0
+rootDIR="$(dirname "$(readlink -f "$0")")"
 inFILE=/fof_lightcone_ang.f90
 xFILE=/fof_lightcone_ang
 echo "rootDIR = $rootDIR"

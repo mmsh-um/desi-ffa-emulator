@@ -1,0 +1,133 @@
+ namini = /pscratch/sd/s/sikandar/desi-ffa-emulator//emulate_bitw_v1.1/INI_emulate_bitw_lightcone_ntile_EZmock_5_ll_0.02_beta_-0.12.txt
+ emu_dir          = /pscratch/sd/s/sikandar/desi-ffa-emulator/emulate_bitw_v1.1/
+ namin_part       = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/out/EZmock/EZmock_forFAemu_m5_B_BGS_truent_part_llen0.02.dat
+ namin_selmsk     = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/in/forFAemu_data_BGS.dat
+ pfx_selprop      = /pscratch/sd/s/sikandar/desi-ffa-emulator/emulate_bitw_v1.1/out/EZmock/FAemu_m5_B_BGS_llen0.02_beta-0.12_truent_cfc_
+ namin_qref       = /pscratch/sd/s/sikandar/desi-ffa-emulator/emulate_bitw_v1.1/out/TrainedEmulator_Data/FAemu_data_B_BGS_llen0.02_truent_cfc_antico_deco0.1_beta0_indselfrac_cfc_qm.dat
+ pfx_out          = /pscratch/sd/s/sikandar/desi-ffa-emulator/emulate_bitw_v1.1/out/EZmock/FAemu_m5_B_BGS_llen0.02_beta-0.12_truent_cfc_nbits217_
+ npart            =      850140
+ seed             =   -29867345
+ thold            =           1
+ learn_lg         = F
+ emulate_lg       = T
+ individual_lg    = T
+ close_friends_lg = T
+ true_ngsel_lg    = F
+ mu_sel   =   1.0000000000000000     
+ sg_sel   =   0.0000000000000000     
+ frac_nt0 =   1.0000000000000000     
+ fix_qref_lg =  F
+ sz0_fix     =   500.00000000000000     
+ sg_sz_fix   =   50.000000000000000     
+ ntm0_fix    =   6.0000000000000000     
+ sg_ntm_fix  =  0.50000000000000000     
+ smpl =           2
+ nwe   =       9
+ nbits =    279
+ antico_lg =  T
+ deco      =  0.10000000000000001     
+ adj_qref_lg =  T
+ beta0       =  0.69999999999999996     
+ beta1       = -0.12000000000000000     
+ reading particle catalogue ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   2.59000808E-04
+  remaining (lin ext) [s] =   2.20161057    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =  0.406702995    
+  remaining (lin ext) [s] =   1.62681198    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =  0.796100020    
+  remaining (lin ext) [s] =   1.19414997    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   1.19491208    
+  remaining (lin ext) [s] =  0.796608031    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   1.58408511    
+  remaining (lin ext) [s] =  0.396021277    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   1.99235404    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ sum(w) =   1397388.0000000000     
+ count(msk) =      850140
+ computing particle chain ...
+  cnt =      758032
+  count(check) =      758032
+  count(chain.eq.-2) =           0
+  count(chain.eq.-1) =      758032
+  count(chain_ini.eq.-2) =            0
+  count(chain_ini.eq.0) =        92108
+  count(chain_ini.gt.0) =       758032
+  sum(chain_ini,chain_ini.gt.0) =      850140
+  maxval(chain_ini) =          10
+ done
+ computing number of halos ...
+  sum(cnt) =      850140
+  nhalo =      758032    (thold =           1 )
+ done
+ reading qref (individual cfc) ...
+ done
+ adjusting qref (individual cfc) ...
+  norm =  0.86596664559069259     
+ done
+ emulating bitwise weights (individual cfc) ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   4.07218933E-04
+  remaining (lin ext) [s] =   3.46152377    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =  0.610515118    
+  remaining (lin ext) [s] =   2.44206047    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =   1.20238400    
+  remaining (lin ext) [s] =   1.80357599    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   1.79548502    
+  remaining (lin ext) [s] =   1.19699001    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   2.39915609    
+  remaining (lin ext) [s] =  0.599789023    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   3.09197235    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ "injecting" anticorrelation ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   9.09328461E-04
+  remaining (lin ext) [s] =   7.72965574    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =   1.20302773    
+  remaining (lin ext) [s] =   4.81211090    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =   2.47616196    
+  remaining (lin ext) [s] =   3.71424294    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   3.56520748    
+  remaining (lin ext) [s] =   2.37680507    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   4.67575550    
+  remaining (lin ext) [s] =   1.16893888    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   5.80442524    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ computing IIP weights ...
+ done
+ sum(wiip) =   1477375.4072117025     
+ test smpl =           1
+  count(msk_t) =      529224  (vs           0 )
+  sum(wiip,msk_t) =   850397.01970936311       (vs      850140 )
+ test smpl =         139
+  count(msk_t) =      529118  (vs           0 )
+  sum(wiip,msk_t) =   850666.05075800116       (vs      850140 )
+ test smpl =         186
+  count(msk_t) =      528781  (vs           0 )
+  sum(wiip,msk_t) =   849821.64031512791       (vs      850140 )
+ test smpl =         279
+  count(msk_t) =      529049  (vs           0 )
+  sum(wiip,msk_t) =   850495.51213865099       (vs      850140 )
+ writing test sample 2 ...
+ done
+ count(selmsk.and.not.msk) =           0
+ writing output ...
+ done

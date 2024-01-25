@@ -1,0 +1,132 @@
+ 25/01/2024   10:23:42.371
+ namini = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/INI_fof_lightcone_ang_EZmock_m5_ll_0.02.txt
+ fof_dir     = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/
+ namin       = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/in/BGS_EZmock_forFAemu_m5.dat
+ namout_part = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/out/EZmock/EZmock_forFAemu_m5_B_BGS_truent_part_llen0.02.dat
+ namout_halo = /pscratch/sd/s/sikandar/desi-ffa-emulator/fof_v1.0/out/EZmock/EZmock_forFAemu_m5_B_BGS_truent_halo_llen0.02.dat
+ npart       =      850140
+ linklen     =   2.0000000000000000E-002
+ ncut        =           1
+ tartype0    =          60
+ galcap      = B
+ nsplit      =           1
+ just_cfc_lg = F
+ reading galaxy catalogue ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   2.61999667E-04
+  remaining (lin ext) [s] =   2.22710204    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =  0.371646017    
+  remaining (lin ext) [s] =   1.48658407    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =  0.738914967    
+  remaining (lin ext) [s] =   1.10837245    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   1.11464798    
+  remaining (lin ext) [s] =  0.743098676    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   1.51393902    
+  remaining (lin ext) [s] =  0.378484756    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   1.89990199    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ count(msk) =      850140
+ converting galaxies to cartesian ...
+ hubb0  =   100.00000000000000     
+ omg_m0 =  0.31000000000000000     
+ omg_l0 =  0.68999999999999995     
+ omg_k0 =   0.0000000000000000     
+ done
+ finding halos ...
+ count(msk_t) =      850140
+  (FOF)
+ ngrid      =          50
+ theta_max  =   2.0000000000000000E-002
+ unisep_max =   3.4906584862667362E-004
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   1.01518631E-03
+  remaining (lin ext) [s] =   8.62948990    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =  0.823176146    
+  remaining (lin ext) [s] =   3.29270458    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =   1.82415915    
+  remaining (lin ext) [s] =   2.73623872    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   2.48113728    
+  remaining (lin ext) [s] =   1.65409148    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   3.08895731    
+  remaining (lin ext) [s] =  0.772239327    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   3.65435219    
+  remaining (lin ext) [s] =   0.00000000    
+  minval(cfc,msk), maxval(cfc,msk) =           0           6
+  sum(cfc,msk)/count(msk) =  0.23164184722516293     
+  count(cfc.eq.0) =      681670
+  count(cfc.gt.0) =      168470
+  count(cfc.lt.0) =           0
+  writing binary file ...
+  done
+  count(haloid.eq.-2) =           0
+  count(haloid.gt.0) =      850140
+ done
+ writing haloid for each galaxy ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   2.65841484E-02
+  remaining (lin ext) [s] =   225.975891    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =  0.483016968    
+  remaining (lin ext) [s] =   1.93206787    
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =  0.933262825    
+  remaining (lin ext) [s] =   1.39989424    
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   1.37852907    
+  remaining (lin ext) [s] =  0.919019401    
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   1.81727076    
+  remaining (lin ext) [s] =  0.454317689    
+ progress [%]             =   100.000000    
+  time elapsed [s]        =   2.27317095    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ computing particle chain ...
+  cnt =      758032
+  count(check) =      758032
+  count(chain.eq.-2) =           0
+  count(chain.eq.-1) =      758032
+  count(chain_ini.eq.-2) =            0
+  count(chain_ini.eq.0) =        92108
+  count(chain_ini.gt.0) =       758032
+  sum(chain_ini,chain_ini.gt.0) =      850140
+  maxval(chain_ini) =          10
+ done
+ computing number of halos ...
+  sum(cnt) =      850140
+  nhalo =      758032    (thold =           1 )
+ done
+ computing halo properties ...
+ progress [%]             =   1.17627680E-02
+  time elapsed [s]        =   3.05175781E-05
+  remaining (lin ext) [s] =  0.259411633    
+ progress [%]             =   20.0000000    
+  time elapsed [s]        =   2.25229263E-02
+  remaining (lin ext) [s] =   9.00917053E-02
+ progress [%]             =   40.0000000    
+  time elapsed [s]        =   4.55102921E-02
+  remaining (lin ext) [s] =   6.82654381E-02
+ progress [%]             =   60.0000000    
+  time elapsed [s]        =   6.77671432E-02
+  remaining (lin ext) [s] =   4.51780967E-02
+ progress [%]             =   80.0000000    
+  time elapsed [s]        =   9.23023224E-02
+  remaining (lin ext) [s] =   2.30755806E-02
+ progress [%]             =   100.000000    
+  time elapsed [s]        =  0.114647865    
+  remaining (lin ext) [s] =   0.00000000    
+ done
+ writing halo properties ...
+ done
+ 25/01/2024   10:23:52.693
