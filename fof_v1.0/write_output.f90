@@ -1,6 +1,6 @@
 !> last modified 04-01-2022
 
-subroutine write_output(n,x,y,z,w,xh,yh,zh,wh,halo,halosz,ncut,namout_part,namout_halo)
+subroutine write_output(n,x,y,z,w,xh,yh,zh,wh,halo,halosz,ncut,namout_part,namout_halo,mocknumber)
   
   implicit none
 
@@ -12,6 +12,7 @@ subroutine write_output(n,x,y,z,w,xh,yh,zh,wh,halo,halosz,ncut,namout_part,namou
   integer(4), dimension(n) :: halo,halosz
   character(msl) :: namout_part,namout_halo
   integer(4) :: i,j
+  character(4) :: mocknumber
 
   integer(4), parameter :: hist_dim=100
   real(8), parameter :: hist_step=1.d0
@@ -43,7 +44,7 @@ subroutine write_output(n,x,y,z,w,xh,yh,zh,wh,halo,halosz,ncut,namout_part,namou
      endif
   enddo
   
-  open(200,file='out/histogram.dat')
+  open(200,file='out/histogram_m'//trim(mocknumber)//'.dat')
   do i=1,hist_dim
      write(200,*)real(hist0+(i-0.5d0)*hist_step),real(hist(i))
   enddo
