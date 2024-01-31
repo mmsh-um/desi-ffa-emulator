@@ -44,7 +44,7 @@ program emulate_bitw
   real(8) :: deco,beta1,beta0
   integer(4), dimension(4) :: itest
   logical :: eff_lg
-  
+  character(4) :: mocknum
   !namini='INI_emulate_bitw_lightcone_ntile.txt'
   call get_command_argument(1,namini)
   write(*,*)'namini = ',trim(namini)
@@ -77,6 +77,7 @@ program emulate_bitw
   read(1000,*)dum,beta0
   read(1000,*)dum,beta1
   read(1000,*)dum,emu_dir
+  read(1000,*)dum,mocknum
   close(1000)
   
   write(*,*)'emu_dir          = ',trim(emu_dir)
@@ -109,6 +110,7 @@ program emulate_bitw
   write(*,*)'adj_qref_lg = ',adj_qref_lg
   write(*,*)'beta0       =',beta0
   write(*,*)'beta1       =',beta1
+  write(*,*)'mocknum     =',mocknum
     
   allocate(w(npart))
   allocate(msk(npart))
@@ -213,7 +215,7 @@ program emulate_bitw
            write(*,*)'done'
            if (adj_qref_lg) then
               write(*,*)'adjusting qref (individual cfc) ...'
-              call adjust_qref(qref_cfc,cnt_cfc,beta0,beta1,.true.,emu_dir)
+              call adjust_qref(qref_cfc,cnt_cfc,beta0,beta1,.false.,emu_dir)
               write(*,*)'done'
            endif
            write(*,*)'emulating bitwise weights (individual cfc) ...'
@@ -360,7 +362,7 @@ program emulate_bitw
      do i=1,1000
         call we2l(1000,we(:1000,:),l)
      enddo
-     open(7654,file=trim(emu_dir)//'out/bool_test.txt')
+     open(7654,file=trim(emu_dir)//'out/bool_test_m'//trim(mocknum)//'.txt')
      do i=1,1000
         write(7654,*)l(i,:)
      enddo
