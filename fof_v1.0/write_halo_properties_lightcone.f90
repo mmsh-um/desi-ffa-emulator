@@ -1,6 +1,6 @@
 !> last modified 30-01-2023
 
-subroutine write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,hist_lg,namout_halo, fofdir)
+subroutine write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,hist_lg,namout_halo, fofdir,mocknumber)
   
   implicit none
 
@@ -18,6 +18,7 @@ subroutine write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,
   real(8), parameter :: hist0=0.5d0
   real(8), dimension(hist_dim)  :: hist
   character(1024) :: fofdir
+  character(4) :: mocknumber
 
   open(110,file=trim(namout_halo))
   do i=1,nhalo
@@ -35,7 +36,7 @@ subroutine write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,
         endif
      enddo
      
-     open(200,file=trim(fofdir)//'out/histogram.dat')
+     open(200,file=trim(fofdir)//'out/histogram_m'//trim(mocknumber)//'.dat')
      do i=1,hist_dim
         write(200,*)real(hist0+(i-0.5d0)*hist_step),real(hist(i))
      enddo
