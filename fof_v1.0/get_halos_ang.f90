@@ -1,6 +1,6 @@
 !> last modified 04-06-2023
 
-subroutine get_halos_ang(n,u,w,msk,theta_max,haloid,halosz,cfc,check_lg, fofdir)
+subroutine get_halos_ang(n,u,w,msk,theta_max,haloid,halosz,cfc,check_lg, fofdir,mocknumber)
   
   implicit none
 
@@ -28,6 +28,7 @@ subroutine get_halos_ang(n,u,w,msk,theta_max,haloid,halosz,cfc,check_lg, fofdir)
   character(3) :: niter_c
   integer(4) :: hey
   character(1024) :: fofdir
+  character(4) :: mocknumber
   niter=niter+1
   
   unisep_max=2.d0*sin(0.5d0*deg2rad*theta_max)
@@ -111,7 +112,7 @@ subroutine get_halos_ang(n,u,w,msk,theta_max,haloid,halosz,cfc,check_lg, fofdir)
      
      write(*,*)' writing binary file ...'
      call itg2chr(niter,niter_c)
-     open(605,file=trim(fofdir)//'out/raw_pchain_'//trim(niter_c)//'.dat',form='unformatted',access='stream')
+     open(605,file=trim(fofdir)//'out/raw_pchain_'//trim(niter_c)//'_m'//trim(mocknumber)//'.dat',form='unformatted',access='stream')
      write(605)pchain
      close(605)
      write(*,*)' done'
@@ -120,7 +121,7 @@ subroutine get_halos_ang(n,u,w,msk,theta_max,haloid,halosz,cfc,check_lg, fofdir)
      
      write(*,*)' reading binary file ...'
      call itg2chr(niter,niter_c)
-     open(605,file=trim(fofdir)//'out/raw_pchain_'//trim(niter_c)//'.dat',form='unformatted',access='stream') 
+     open(605,file=trim(fofdir)//'out/raw_pchain_'//trim(niter_c)//'_m'//trim(mocknumber)//'.dat',form='unformatted',access='stream') 
      read(605)pchain
      close(605)
      write(*,*)' done'
