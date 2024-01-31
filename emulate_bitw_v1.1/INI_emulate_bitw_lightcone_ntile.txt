@@ -26,4 +26,5 @@ adj_qref_lg      F
 beta0             0.d0
 beta1             0.d0
 emu_dir     '/global/cfs/cdirs/desi/survey/catalogs/main/mocks/FAemu_preliminary/sikandar/Updated_Code_CFC/emulate_bitw_v1.1/'
+mocknum          7
 
