@@ -61,6 +61,7 @@ program Friend_Of_Friend
   integer(4), dimension(:), allocatable :: group_split 
   !integer(4), dimension(:), allocatable :: duplicates
   integer(4), dimension(:), allocatable :: cfc
+  character(4) :: mocknumber
   
   call write_time_and_date()
 
@@ -79,6 +80,7 @@ program Friend_Of_Friend
   read(1000,*)dum,nsplit
   read(1000,*)dum,just_cfc_lg
   read(1000,*)dum,fof_dir
+  read(1000,*)dum,mocknumber
   close(1000)
   
   write(*,*)'fof_dir     = ',trim(fof_dir)
@@ -92,6 +94,7 @@ program Friend_Of_Friend
   write(*,*)'galcap      = ',galcap
   write(*,*)'nsplit      =',nsplit
   write(*,*)'just_cfc_lg =',just_cfc_lg
+  write(*,*)'mocknum     =',mocknumber
   
   allocate(x(npart),y(npart),z(npart),w(npart))
   allocate(msk(npart))
@@ -141,7 +144,7 @@ program Friend_Of_Friend
         call get_cfc_ang(npart,u,w,msk_t,linklen,cfc)
      else
         write(*,*)' (FOF)'
-        call get_halos_ang(npart,u,w,msk_t,linklen,haloid,chain_ini,cfc,.false., fof_dir)
+        call get_halos_ang(npart,u,w,msk_t,linklen,haloid,chain_ini,cfc,.false., fof_dir,mocknumber)
      endif
   enddo
   deallocate(group_split,msk_t)
@@ -213,7 +216,7 @@ program Friend_Of_Friend
      write(*,*)'done'
      
      write(*,*)'writing halo properties ...'
-     call write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,.true.,namout_halo, fof_dir)
+     call write_halo_properties_lightcone(nhalo,rah,dech,rshifth,wh,sz,haloidh,.true.,namout_halo, fof_dir,mocknumber)
      write(*,*)'done'
      deallocate(wh)
      deallocate(rah,dech,rshifth)
